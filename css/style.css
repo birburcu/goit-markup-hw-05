@@ -418,18 +418,49 @@ menu:active {
   transform: translateY(0);
 }
 /* FOOTER */
+
 .site-footer {
   padding: 100px 0;
   background-color: #2e2f42;
+}
+
+.footer-container {
+  display: flex;
+  align-items: baseline;
+  gap: 40px;
+}
+
+.footer-site-info {
+  margin-right: 120px;
 }
 
 .site-footer .logo {
   margin-bottom: 16px;
 }
 
-.footer-container {
+.footer-text {
+  max-width: 264px;
+  font-size: 16px;
+  font-weight: 500; /* <p> etiketine 'font-weight: 500' stili atanmıştır */
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
+}
+
+.footer-social-icon {
   display: flex;
-  align-items: baseline;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.footer-social-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  margin-bottom: 16px;
 }
 
 .footer-social-icon-container {
@@ -443,12 +474,6 @@ menu:active {
 .footer-social-item {
   width: 40px;
   height: 40px;
-}
-
-.footer-social-icon {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 16px;
 }
 
 .footer-social-icon-item {
@@ -472,69 +497,56 @@ menu:active {
   fill: #f4f4fd;
 }
 
-.footer-text {
-  max-width: 264px;
-  font-size: 16px;
-  font-weight: 500px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #f4f4fd;
+.site-footer .subscribe {
+  margin-left: 80px;
 }
 
-.footer-site-info {
-  margin-right: 120px;
-}
-
-.footer-social-title {
-  font-weight: 500;
+.subscribe-title {
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 24px;
   letter-spacing: 0.02em;
   color: #ffffff;
   margin-bottom: 16px;
 }
 
-.site-footer .subscribe {
-  margin-left: 80px;
+.subscribe-form {
+  display: flex; /* <form> etiketine 'display: flex' stili atanmıştır */
+  gap: 24px; /* <form> etiketine 'gap: 24px' stili atanmıştır */
 }
 
-.site-footer .subscribe > p {
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 2%;
-  text-align: left;
+.subscribe-input {
+  width: 264px; /* 'width: 264px' stili atanmıştır */
+  height: 40px; /* 'height: 40px' stili atanmıştır */
+  border: 1px solid #ffffff; /* 'border: 1px solid #ffffff' stili atanmıştır */
+  background-color: transparent; /* 'background-color: transparent' stili atanmıştır */
+  font-size: 12px; /* 'font-size: 12px' stili atanmıştır */
+  line-height: 2; /* 'line-height: 2' stili atanmıştır */
+  letter-spacing: 0.04em; /* 'letter-spacing: 0.04em' stili atanmıştır */
+  padding-left: 16px; /* 'padding-left: 16px' stili atanmıştır */
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); /* 'box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15)' stili atanmıştır */
+  border-radius: 4px; /* 'border-radius: 4px' stili atanmıştır */
+  color: #ffffff; /* 'color: #ffffff' stili atanmıştır */
 }
 
-.site-footer .subscribe .footer-email {
-  width: 264px;
-  height: 40px;
-  border-radius: 4px;
-  border: 1px solid white;
+.subscribe-input::placeholder {
   color: white;
-  background-color: #2e2f42;
 }
 
-.site-footer .subscribe .footer-email::placeholder {
-  color: white;
-  padding: 16px;
-}
-
-.site-footer .subscribe .footer-button {
+.subscribe-button{
   display: flex;
   align-items: center;
-  justify-self: center;
+  justify-content: center;
   width: 165px;
   height: 40px;
-  background-color: #4d5ae5;
-  color: white;
-  border-radius: 4px;
+  background-color: #4d5ae5; 
+  color: white; 
+  border-radius: 4px; 
+  border: none; 
+  cursor: pointer; 
+  transition: background-color 250ms ease-in-out;
 }
 
-.site-footer .subscribe .footer-button .icon-send {
-  width: 24px;
-  height: 20px;
-  margin-left: 16px;
-}
+
 /*popup*/
 .popup {
   position: fixed;
