@@ -417,7 +417,7 @@ menu:active {
 .our-portfolio-list:hover .portfolio-info {
   transform: translateY(0);
 }
-/* FOOTER */
+##---alt kapak ---##
 
 .site-footer {
   padding: 100px 0;
@@ -441,7 +441,7 @@ menu:active {
 .footer-text {
   max-width: 264px;
   font-size: 16px;
-  font-weight: 500; /* <p> etiketine 'font-weight: 500' stili atanmıştır */
+  font-weight:500; 
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
@@ -510,22 +510,22 @@ menu:active {
 }
 
 .subscribe-form {
-  display: flex; /* <form> etiketine 'display: flex' stili atanmıştır */
-  gap: 24px; /* <form> etiketine 'gap: 24px' stili atanmıştır */
+  display: flex;  
+  gap: 24px; 
 }
 
 .subscribe-input {
-  width: 264px; /* 'width: 264px' stili atanmıştır */
-  height: 40px; /* 'height: 40px' stili atanmıştır */
-  border: 1px solid #ffffff; /* 'border: 1px solid #ffffff' stili atanmıştır */
-  background-color: transparent; /* 'background-color: transparent' stili atanmıştır */
-  font-size: 12px; /* 'font-size: 12px' stili atanmıştır */
-  line-height: 2; /* 'line-height: 2' stili atanmıştır */
-  letter-spacing: 0.04em; /* 'letter-spacing: 0.04em' stili atanmıştır */
-  padding-left: 16px; /* 'padding-left: 16px' stili atanmıştır */
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); /* 'box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15)' stili atanmıştır */
-  border-radius: 4px; /* 'border-radius: 4px' stili atanmıştır */
-  color: #ffffff; /* 'color: #ffffff' stili atanmıştır */
+  width: 264px;  
+  height: 40px; 
+  border: 1px solid #ffffff;  
+  background-color: transparent;  
+  font-size: 12px; 
+  line-height: 2;  
+  letter-spacing: 0.04em;  
+  padding-left: 16px;  
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);   
+  border-radius: 4px;  
+  color: #ffffff; 
 }
 
 .subscribe-input::placeholder {
@@ -536,6 +536,10 @@ menu:active {
   display: flex;
   align-items: center;
   justify-content: center;
+  min-width:165px;
+  font-weight:500;
+  line-height:1,5;
+  letter-spacing:0.04em;
   width: 165px;
   height: 40px;
   background-color: #4d5ae5; 
